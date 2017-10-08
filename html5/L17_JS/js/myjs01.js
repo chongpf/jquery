@@ -1,0 +1,1 @@
+document.write("hello this time js file");

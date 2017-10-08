@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>js</title>
+</head>
+<body>
+    <!--<button id="btnid" onclick="goNew()">button</button>-->
+    <!--<script>-->
+            <!--function goNew() {-->
+                <!--history.back();-->
+            <!--}-->
+    <!--</script>-->
+    <form>
+        <input type="text" id="textid">
+        <button id="btnid" onclick="safe()">btn</button>
+        <script>
+            function safe() {
+                var name = document.getElementById("textid").value;
+                if(name == "hello"){
+                    history.go(-1);
+                }else{
+                    alert("input error");
+                }
+            }
+        </script>
+    </form>
+</body>
+</html>

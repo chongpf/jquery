@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>js003</title>
+</head>
+<body>
+    <p>i 10, j 10, i+j</p>
+    <p id="result">result</p>
+    <!--<input type="button" onclick="">-->
+    <button onclick="musum()">button</button>
+    <script>
+        function musum() {
+            document.getElementById("result").innerHTML=20;
+        }
+    </script>
+    <script>
+        var i=1;
+        switch (i){
+            case 1:
+                document.writeln("case1");
+                break;
+            case 2:
+                document.writeln("case2");
+                break;
+            default:
+                document.writeln("no case");
+        }
+        document.writeln("<br/>");
+        var arr=[1,2,3,4,5];
+        for(var j in arr){
+            document.writeln(j + " "+arr[j]);
+            document.writeln("<br/>");
+        }
+
+        var iwhile=1;
+        do{
+            document.writeln(iwhile);
+            document.writeln("<br/>");
+            iwhile++;
+        }while (iwhile<10);
+
+    </script>
+</body>
+</html>

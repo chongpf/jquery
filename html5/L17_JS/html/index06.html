@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>js</title>
+    <link href="../css/style06.css" rel="stylesheet" type="text/css">
+</head>
+<body onload="onLd()">
+      <button onclick="demo()" >button1</button>
+      <script>
+           function demo() {
+               alert("demo");
+           }
+           function onOver(ooj) {
+               ooj.innerHTML="Hello";
+           }
+           function onOut(ooj) {
+               ooj.innerHTML="World";
+           }
+           function onChg(ooj) {
+               alert("hello change")
+           }
+           function onSlt(ooj) {
+               ooj.style.background="red";
+           }
+           function onFus(ooj){
+               ooj.style.background="blue";
+           }
+           function onBlur(ooj) {
+               ooj.style.background="none";
+           }
+           function onLd() {
+               alert("load over");
+           }
+      </script>
+      <div class="divClass" onmouseover="onOver(this)" onmouseout="onOut(this)"></div>
+     <form>
+         <input type="text" onchange="onChg(this)">
+         <input type="text" onselect="onSlt(this)" onfocus="onFus(this)" onblur="onBlur(this)">
+     </form>
+
+</body>
+</html>

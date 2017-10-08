@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>js</title>
+    <link href="../css/style08.css" rel="stylesheet" type="text/css">
+</head>
+<body>
+    <p id="pid">Hello</p>
+    <div id="divid">HelloDIV</div>
+    <button id="btnid">button</button>
+    <script>
+//        document.getElementById("btnid").addEventListener("click",function () {
+//            alert("click");
+//        })
+        var x = document.getElementById("btnid");
+        x.addEventListener("click",hello);
+        x.addEventListener("click",world);
+        function hello() {
+            alert("hello");
+        }
+       function world() {
+           alert("world");
+       }
+
+       var divid = document.getElementById("divid");
+       divid.addEventListener("mouseover",enter);
+       function enter() {
+           alert("enter");
+       }
+    </script>
+</body>
+</html>

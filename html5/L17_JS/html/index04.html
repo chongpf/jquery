@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>js004</title>
+</head>
+<body>
+      <script>
+          var i=10;
+          var j=20;
+          var k= i+j;
+
+
+          function sumij(i,j) {
+             var sum = i+j;
+              return sum;
+          }
+
+          function hello(name,age) {
+              var result="hello:" + name + "  are you "+sumij(age,1)+"?";
+              document.getElementById("pid").innerHTML=result;
+          }
+      </script>
+      <input type="button" value="Button" onclick="sumij(1,2)"/>
+
+      <input type="button" value="hellow" onclick="hello('michael',20)">
+      <p id="pid"></p>
+</body>
+</html>

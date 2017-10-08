@@ -1,0 +1,12 @@
+li strong{
+    color: red;
+}
+strong {
+    color: blue;
+}
+#pid a{
+    color: blueviolet;
+}
+#divid a{
+    color: blue;
+}

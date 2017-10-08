@@ -1,0 +1,24 @@
+div{
+    width: 100px;
+    height: 100px;
+    background-color: lemonchiffon;
+}
+/*.div2{*/
+    /*transform:translate(200px,100px)*/
+    /**/
+/*!*}*!*/
+/*.div2{*/
+    /*transform:rotate(200deg)*/
+/*}*/
+
+/*.div2{*/
+    /*margin-top: 100px;*/
+    /*transform:scale(1,2)*/
+/*}*/
+/*.div2{*/
+    /*transform:skew(20deg,20deg)*/
+/*}*/
+.div2{
+    transform:rotateX(120deg);
+    transform:rotateY(120deg);
+}

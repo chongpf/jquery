@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>js</title>
+</head>
+<body>
+    <button id="btnid2" onclick="stopClick()">stop</button>
+    <p id="pid"></p>
+
+    <button id="btnid3" onclick="myWin()">win</button>
+    <button id="btnid4" onclick="stopWin()">stopWin</button>
+    <script>
+//         document.write(window.innerWidth + ":" + window.innerHeight);
+//         document.write("<br/>");
+//
+//         function btnClick() {
+//             window.open("index17.html","windowname","height = 100px,width = 100px,left = 100px,top = 100px,toolbar = no,menubar = no");
+//             window.close();}
+//
+        var mytime = setInterval(function () {
+            getTime();
+        },1000);
+
+        function getTime() {
+            var d = new Date();
+            var t = d.toLocaleTimeString();
+            document.getElementById("pid").innerHTML = t;
+        }
+
+        function stopClick() {
+            clearInterval(mytime);
+        }
+
+        var win;
+        function myWin() {
+            alert("Hello");
+            win = setTimeout(function () {
+                myWin();
+            },3000);
+        }
+        function stopWin() {
+            clearTimeout(win);
+        }
+
+    </script>
+
+</body>
+</html>

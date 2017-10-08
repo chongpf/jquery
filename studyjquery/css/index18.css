@@ -1,0 +1,26 @@
+#div1{
+    width: 500px;
+    height: 500px;
+    border: 5px solid #f8d7da;
+}
+#div2{
+    width: 400px;
+    height: 150px;
+    margin-top: 10px;
+    margin-left: 10px;
+    border: 3px solid blue;
+}
+#div3{
+    width: 400px;
+    height: 150px;
+    margin-top: 10px;
+    margin-left: 10px;
+    border: 3px solid blue;
+}
+p{
+    margin-left: 10px;
+    margin-left: 10px;
+    width: 150px;
+    height: 100px;
+    border: 1px solid chocolate;
+}

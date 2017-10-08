@@ -1,0 +1,31 @@
+*{
+    margin: 0px;
+    padding: 0px;
+}
+.div{
+    width: 70%;
+    height: 100px;
+    background-color: #FF0000;
+    /*margin-left: auto;*/
+    /*margin-right: auto;*/
+
+    /*position: absolute;*/
+    /*right: 0px;*/
+
+    /*float: left;*/
+    /*margin: 100px auto;*/
+    margin-top: 100px;
+    margin-left: 100px;
+}
+.p1{
+    line-height: normal;
+    max-width: 300px;
+}
+.p2{
+    line-height: 200%;
+    width: 400px;
+}
+.p3{
+    line-height: 50%;
+    width: 400px;
+}

@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>js</title>
+</head>
+
+<body>
+       <script>
+           var arr = ["e1","e2","e3"];
+           var arr2= ["e4","e5"];
+           var arr3 = arr.concat(arr2);
+           document.write(arr3[4]);
+
+           var a = ["1","3","4","2","5"];
+           document.write(a.sort(function (i,j) {
+               return j-i;
+           }));
+           document.write("<br/>");
+           var arr4 = ["a","b"];
+           arr4.push("c");
+           document.write(arr4[2]);
+           document.write(arr4.reverse());
+           document.write("<br/>");
+           document.write(Math.round(2.1));
+
+           document.write(parseInt(Math.random()*10));
+       </script>
+</body>
+</html>

@@ -1,0 +1,32 @@
+body p{
+    color: blue;
+    text-align: center;
+}
+h2{
+    text-indent: 2em;
+    text-transform: uppercase;
+    text-shadow: 100px 20px 1px #FF0000;
+    width: 10px;
+    text-wrap: normal;
+    font-size: 40px;
+    font-family: "Agency FB";
+}
+
+p{
+    width: 10px;
+    text-wrap: normal;
+}
+
+a:link{
+    color: blue;
+    text-decoration: none;
+}
+a:visited{
+    color: brown;
+}
+a:hover{
+    color: blue;
+}
+a:active {
+    color: cyan;
+}

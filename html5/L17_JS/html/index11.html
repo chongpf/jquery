@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>js</title>
+</head>
+
+<body>
+<div id="divid">
+    <button id="btn1">btn</button>
+    <a href="http://www.baidu.com" target="_blank" id="aid">baidu</a>
+</div>
+    <script>
+        document.getElementById("btn1").addEventListener("click",showType);
+        document.getElementById("divid").addEventListener("click",showDiv);
+        document.getElementById("aid").addEventListener("click",showA);
+        function showType(event) {
+            alert(event.target);
+            event.stopPropagation();
+        }
+        function showDiv(event) {
+            alert("propagation");
+        }
+
+        function showA(event) {
+          //  event.stopPropagation();
+            event.preventDefault();
+        }
+    </script>
+
+</body>
+</html>

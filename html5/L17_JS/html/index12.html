@@ -1,0 +1,69 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>js</title>
+</head>
+
+<body onload="startTime()">
+      <!-- lesson1-->
+      <script>
+          var people = new Object();
+          people.name = "michael";
+          people.age ="30";
+          document.write(people.name + ":" + people.age);
+
+          person = {name:"michael",age:"30"};
+          document.write(person.name+":"+person.age);
+
+          function student(name,age) {
+              this._age=age+"age";
+              this._name=name+"name";
+          }
+          son = new student("micael","30");
+          document.write(son._age +":"+son._name);
+
+          <!-- lesson2-->
+          var str = "Hello World!";
+          document.write("<br/>");
+          document.write(str.length);
+          document.write(str.indexOf("World!"));
+          document.write(str.match("World"));
+          document.write(str.replace("World","baidu"));
+          document.write(str.toUpperCase());
+          document.write(str.toLowerCase());
+          var str1="hello,baidu,select";
+
+          var arr=str1.split(",");
+          document.write(arr[1]+arr[0]+arr[2]);
+          document.write("<br/>");
+
+          <!-- lesson3-->
+           var date1= new Date();
+          document.writeln(date1);
+          document.writeln(date1.getFullYear());
+          document.writeln(date1.getTime());
+          date1.setFullYear(2010,1,1);
+          document.writeln(date1);
+
+          function startTime() {
+              var today = new Date();
+              var _h = checkTime(today.getHours());
+              var _m = checkTime(today.getMinutes());
+              var _s = checkTime(today.getSeconds());
+               document.getElementById("divid").innerHTML=_h+":"+_m+":"+_s;
+               t=setTimeout(function () {
+                   startTime();
+               },1000);
+          }
+          function checkTime(i){
+              if(i<10) {
+                  i = "0" + i;
+              }
+              return i;
+          }
+      </script>
+
+      <div id="divid"></div>
+</body>
+</html>

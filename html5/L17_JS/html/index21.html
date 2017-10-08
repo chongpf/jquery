@@ -1,0 +1,21 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>js</title>
+</head>
+<body>
+    <button id="btnid" onclick="getScreen()">button</button>
+    <p id="pid">new window</p>
+    <script>
+        function getScreen() {
+            var h = screen.height;
+            var w = screen.width;
+            var vh = screen.availHeight;
+            var vw = screen.availWidth;
+            var p = document.getElementById("pid");
+            p.innerHTML = h+" "+w+" "+vh+" "+vw+" ";
+        }
+    </script>
+</body>
+</html>

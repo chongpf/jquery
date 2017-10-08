@@ -1,0 +1,23 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>js</title>
+</head>
+<body>
+    <button id="btnid" onclick="getLocation()">button</button>
+    <p id="pid">new window</p>
+    <script>
+        function getLocation() {
+         var host = "localHost:" +   window.location.hostname;
+            var path = " path:" +   window.location.pathname;
+            var port = " port:" +   window.location.port;
+            var protocal = " protocal:" +   window.location.protocol;
+            var href = " href:" + window.location.href;
+            var p = document.getElementById("pid");
+            p.innerHTML = host + path + port + protocal + href;
+            location.assign("http://www.baidu.com");
+        }
+    </script>
+</body>
+</html>

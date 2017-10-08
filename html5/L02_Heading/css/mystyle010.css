@@ -1,0 +1,53 @@
+#position1{
+    width: 100px;
+    height: 100px;
+    background-color: blue;
+    position: absolute;
+    top: 300px;
+    z-index: 3;
+    left: 20px;
+}
+#position2{
+    width: 100px;
+    height: 100px;
+    background-color: #7aff51;
+    position: absolute;
+    top: 350px;
+    z-index: 2;
+    left: 30px;
+}
+#position3{
+    width: 100px;
+    height: 100px;
+    background-color: #FF0000;
+    position: absolute;
+    top: 400px;
+    z-index: 1;
+    left: 50px;
+}
+#container{
+    width: 550px;
+    height: 350px;
+    background-color: darkgray;
+}
+#fd{
+    width: 50px;
+    height: 200px;
+    background-color: black;
+    float: left;
+}
+#sd{
+    width: 50px;
+    height: 100px;
+    background-color: chocolate;
+    float: left;
+}
+#td{
+    width: 500px;
+    height: 100px;
+    background-color: slateblue;
+    float: left;
+}
+#test{
+    clear: both;
+}

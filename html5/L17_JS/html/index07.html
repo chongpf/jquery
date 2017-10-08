@@ -1,0 +1,26 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>js</title>
+</head>
+<body>
+       <button onclick="demo1()">button</button>
+       <p id="pid">pp</p>
+       <p id="pid2">pp</p>
+       <input type="text" id="txt1">
+       <input type="text" id="txt2">
+       <a href="http://www.sina.com" id="aid">link</a>
+       <img src="../image/image15.jpg" id="imgid">
+       <script>
+           function demo1() {
+               document.getElementById("pid").innerHTML="hello pid";
+               document.getElementById("pid2").innerHTML="hello pid2";
+               document.getElementById("txt1").value="txt1";
+               document.getElementById("txt2").innerHTML="txt2";
+               document.getElementById("aid").href="http://www.baidu.com";
+               document.getElementById("imgid").src="../image/image1.jpg";
+           }
+       </script>
+</body>
+</html>

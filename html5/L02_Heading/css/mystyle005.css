@@ -1,0 +1,14 @@
+body{
+    background-image: url("../images/image2.jpg");
+    background-color: darkgray;
+    background-repeat: no-repeat;
+    background-position: left top;
+    background-attachment: fixed;;
+    background-size: 100px 100px;
+}
+p{
+    width: 150px;
+    padding: 10px;
+    background-color: #7aff51;
+    background-image: url("../images/image1.jpg");
+}

@@ -1,0 +1,16 @@
+#pid{
+    color: #FF0000;
+}
+/*p strong{*/
+    /*font-size: 20px;*/
+/*}*/
+/*p i{*/
+    /*color: #7aff51;*/
+/*}*/
+
+p>i>strong{
+    font-size: 20px;
+}
+p>i{
+    color: #7aff51;
+}

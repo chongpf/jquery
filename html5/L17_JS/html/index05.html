@@ -1,0 +1,28 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>js</title>
+</head>
+<body>
+      <form>
+          <input type="text" id="txt">
+          <input type="button"  onclick="demo()" value="button">
+      </form>
+      <script>
+           function demo() {
+//               try{
+//                  alert(str);
+//               }catch(err1){
+//                  alert(err1);
+//               }
+               try{
+               var e = document.getElementById("txt").value;
+               throw "text is null";
+                 }catch (err){
+                   alert(err);
+               }
+           }
+      </script>
+</body>
+</html>

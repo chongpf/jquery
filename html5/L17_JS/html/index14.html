@@ -1,0 +1,92 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>js</title>
+</head>
+<body>
+    <p name="pname">Hello1</p>
+    <p name="pname">Hello2</p>
+    <p name="pname">Hello3</p>
+    <a id="aid" title="this tittle of a">Hello AA</a>
+    <ul><li>1</li><li>2</li><li>3</li><li>4</li></ul>
+    <div id="divid">
+        <p id="pid">this is a p in div</p>
+    </div>
+    <script>
+        function getName() {
+            var count= document.getElementsByName("pname");
+            count[1].innerHTML="Hello new 2";
+            document.write(count.length);
+            document.write("<br/>");
+        }
+        getName();
+
+        function getId() {
+            var anode =document.getElementById("aid");
+                 anode.setAttribute("id","newAId")
+            document.write(anode.getAttribute("id"));
+            document.write("<br/>");
+        }
+        getId();
+        document.write("<br/>");
+        function getTag() {
+            var childNode = document.getElementsByTagName("ul")[0].childNodes;
+            document.write(childNode.length);
+            document.write("<br/>");
+            document.write(childNode[0].nodeType);
+            document.write("<br/>");
+        }
+        getTag();
+        document.write("<br/>");
+        
+        function getParentNode() {
+            var childNode = document.getElementById("pid");
+            var parenetNode = childNode.parentNode;
+            document.write(parenetNode.id);
+        }
+        getParentNode();
+        document.write("<br/>");
+
+        function createEle() {
+            var body = document.body;
+            var input = document.createElement("input");
+            input.setAttribute("type","button");
+            input.setAttribute("id","btnid1");
+            input.setAttribute("value","Button");
+            input.onclick = Hello;
+            body.appendChild(input);
+        }
+        function Hello() {
+            alert("hello button");
+        }
+        createEle();
+
+        function addNode() {
+            var divid = document.getElementById("divid")
+            var pid = document.getElementById("pid");
+            var ele = document.createElement("p");
+            ele.id="pid2";
+            ele.innerHTML="this is new p2 for insert";
+            divid.insertBefore(ele,pid);
+        }
+        addNode();
+
+        function removeNode() {
+           var div = document.getElementById("divid");
+           alert(div.childNodes.length);
+           var pid2 = document.getElementById("pid2");
+           var p = div.removeChild(div.childNodes[1]);
+        }
+        removeNode();
+
+        function getSize() {
+            var width = document.body.offsetWidth;
+            var height = document.body.offsetHeight;
+            alert(width+":"+height);
+        }
+       getSize();
+    </script>
+
+</body>
+</html>

@@ -1,0 +1,21 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+</head>
+<body>
+      <button onclick="clicA()">button</button>
+      <audio id="audioId" src="audio/audio1.mp3" controls="controls">dont support</audio>
+      <script>
+          var a = document.getElementById("audioId");
+          function clicA() {
+              if(a.paused){
+                  a.play();
+              }else{
+                  a.pause();
+              }
+          }
+      </script>
+</body>
+</html>

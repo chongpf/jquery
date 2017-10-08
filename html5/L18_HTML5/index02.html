@@ -1,0 +1,21 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+</head>
+<body>
+      <button onclick="clicV()">button</button>
+      <video id="videoId" src="audio/video1.mp4" controls="controls">dont suport</video>
+      <script>
+          var v = document.getElementById("videoId");
+          function clicV() {
+              if(v.paused){
+                  v.play();
+              }else{
+                  v.pause();
+              }
+          }
+      </script>
+</body>
+</html>
